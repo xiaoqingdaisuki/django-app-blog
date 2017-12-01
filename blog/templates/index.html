@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %} xiaoqing {% endblock %}
+
+{% block article %}
+{% for post in posts %}
+<h2 id="article-title"><a href="/blog/{{ post.text }}">{{ post.title }}</a></h2>
+<p id="article-datetime">{{ post.timestamp }}</p>
+<p id="article-excerpt">{{ post.excerpt }}</p>
+<div id="article-footer"><a href="/blog/{{ post.text }}">Read more &rarr;</a></div>
+{% endfor %}
+{% endblock %}

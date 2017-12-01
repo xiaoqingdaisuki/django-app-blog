@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block text %} 
+    <div style="font-size:16px;margin:0 30% 0 30%;text-align:left">
+        <h1>{{ object.title }}</h1>
+        <br />
+        <p style="text-align:center">{{ object.timestamp }}</p>
+        <br />
+        {% autoescape off %}
+        <p>{{ object.body }}</p>
+        {% endautoescape %}
+    </div>
+{% endblock text %}
