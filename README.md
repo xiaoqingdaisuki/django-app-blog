@@ -1,2 +1,2 @@
-# xiaoqing-study-project
-a easy django-blog app
+# xiaoqing-django-study
+a easy django-app blog
